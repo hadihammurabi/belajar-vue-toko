@@ -1,5 +1,12 @@
 # belajar-vue-toko
 
+# Stack Teknologi
+Nama | Peran
+-|-
+Vue Router | Routing Manager
+Vuex | Global Store a. k. State Management
+ES Lint | Penghina Kode
+
 ## Project setup
 ```
 npm install
