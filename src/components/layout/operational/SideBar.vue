@@ -10,8 +10,6 @@
         </v-list-item-content>
       </v-list-item>
 
-      <side-bar-menu-toko />
-
       <v-list-item link>
         <v-list-item-action>
           <v-icon>mdi-cog</v-icon>
@@ -31,12 +29,7 @@
 </template>
 
 <script>
-import SideBarMenuToko from './SideBarMenuToko.vue';
-
 export default {
-  components: {
-    SideBarMenuToko,
-  },
   props: {
     model: Boolean,
   },
