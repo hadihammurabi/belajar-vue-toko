@@ -19,6 +19,7 @@
         sm="6"
         v-for="(toko, index) in $store.getters['toko/tokos']"
         :key="index"
+        @click="selectToko(toko.id)"
       >
         <v-card outlined style="cursor: pointer">
           <v-card-title class="primary--text">
@@ -33,6 +34,12 @@
 
 <script>
 export default {
+  methods: {
+    selectToko(id) {
+      this.$store.dispatch('toko/set_toko', id);
+      this.$router.push({ name: 'Home' });
+    },
+  },
 };
 </script>
 
